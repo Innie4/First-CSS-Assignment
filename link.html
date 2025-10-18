@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innie-Sama | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Intro to Web</div>
+    <nav>
+      <ul>
+        <li><a href="#class1">Class 1</a></li>
+        <li><a href="#class2">Class 2</a></li>
+        <li><a href="#class3">Class 3</a></li>
+        <li><a href="#class4">Class 4</a></li>
+        <li><a href="#class5">Class 5</a></li>
+        <li><a href="#hosting">Hosting</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="class1">
+      <h1>Class 1: Intro to programming concepts</h1>
+      <p>Basic ideas: algorithms, variables, control flow (if/else, loops), and data types.</p>
+
+      <h2>Tools setup</h2>
+      <ul>
+        <li>VS Code — code editor</li>
+        <li>Git — version control tool</li>
+        <li>GitHub — remote repositories</li>
+      </ul>
+
+      <h2>Version control: Git basics</h2>
+      <p>Common commands:</p>
+      <pre><code># initialize repository
+git init
+
+# track files and commit
+git add .
+git commit -m "initial commit"
+
+# push to remote
+git remote add origin &lt;url&gt;
+git push -u origin main
+</code></pre>
+    </section>
+
+    <section id="class2">
+      <h1>Class 2: HTML structure</h1>
+
+      <h2>Document structure</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <h2>Headings, paragraphs, images, links, lists</h2>
+      <h3>Headings & paragraphs</h3>
+      <p>This is a paragraph. Headings organize content (h1–h6).</p>
+
+      <h3>Images (with alt text)</h3>
+      <img src="https://via.placeholder.com/120" alt="Example image showing a placeholder" />
+
+      <h3>Links</h3>
+      <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+
+      <h3>Lists</h3>
+      <ul>
+        <li>Unordered item</li>
+        <li>Unordered item</li>
+      </ul>
+      <ol>
+        <li>Ordered step 1</li>
+        <li>Ordered step 2</li>
+      </ol>
+    </section>
+
+    <section id="class3">
+      <h1>Class 3: Semantic elements, Forms, Accessibility</h1>
+
+      <h2>Semantic elements</h2>
+      <header><strong>Example header</strong></header>
+      <nav><a href="#class1">Example nav link</a></nav>
+      <footer><small>Example footer</small></footer>
+
+      <h2>Forms and input elements</h2>
+      <form>
+        <label for="name">Name (label for accessibility)</label><br />
+        <input id="name" name="name" type="text" /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input id="email" name="email" type="email" /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Accessibility</h2>
+      <p>Always use alt attributes for images and label elements for inputs to improve accessibility.</p>
+    </section>
+
+    <section id="class4">
+      <h1>Class 4: CSS basics</h1>
+
+      <h2>CSS syntax & selectors</h2>
+      <pre><code>selector {
+  property: value;
+}
+</code></pre>
+      <p>Examples: element selectors (p), class selectors (.btn), id selectors (#main).</p>
+
+      <h2>Colors & fonts</h2>
+      <p>Use color names, hex, rgb/rgba. Fonts can be loaded and set via font-family.</p>
+
+      <h2>Inline, internal, external CSS</h2>
+      <p>External CSS (this file) is recommended. Inline example: &lt;h1 style="color: red"&gt;.</p>
+    </section>
+
+    <section id="class5">
+      <h1>Class 5: CSS Box Model</h1>
+      <p>Box model parts: content, padding, border, margin.</p>
+
+      <h2>Width, height, padding, margin</h2>
+      <div class="box-demo">Box model demo</div>
+    </section>
+
+    <section id="hosting">
+      <h1>Hosting on GitHub Pages / Netlify</h1>
+      <p>Build steps:</p>
+      <ol>
+        <li>Push your repo to GitHub</li>
+        <li>Enable GitHub Pages from the repository settings (or connect to Netlify)</li>
+        <li>Deploy and verify the site URL</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Class notes: only topics listed in the syllabus are included here.</p>
+  </footer>
+</body>
+</html>
